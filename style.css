@@ -1,0 +1,45 @@
+.big-box {
+    background-color: aqua;
+    width: 100%;
+    height: 500px;
+    padding-top: 10px;
+    position: relative;
+}
+
+
+.lil-box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    animation-iteration-count: infinite;
+    animation-duration: 8000ms;
+    animation-name: lil-box-animation;
+}
+
+@keyframes lil-box-animation {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: blue;
+        top: 300px;
+    }
+
+    50% {
+        background-color: green;
+        left: 300px;
+    }
+
+    75% {
+        background-color: yellow;
+        bottom: 300px;
+    }
+
+    100% {
+        background-color: red;
+        right: 300px;
+    }
+}
